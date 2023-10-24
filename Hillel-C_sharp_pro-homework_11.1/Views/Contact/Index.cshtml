@@ -1,0 +1,52 @@
+﻿@model IEnumerable<Hillel_C_sharp_pro_homework_11.Models.Contact>
+
+@{
+    ViewBag.Title = "Contacts";
+}
+
+<div class="container shadow p-5 container-custom" align="center">
+    <div class="container">
+        <h1>Contacts</h1>
+
+        <table class="table table-striped table-bordered table-hover">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Phone</th>
+                    <th>Additional Phone</th>
+                    <th>Email</th>
+                    <th>Description</th>
+
+                </tr>
+            </thead>
+            <tbody>
+                @{
+                    foreach (var contact in Model)
+                    {
+                        <tr>
+                            <td>@contact.Name</td>
+                            <td>@contact.Phone</td>
+                            <td>@contact.AdditionalPhone</td>
+                            <td>@contact.Email</td>
+                            <td>@contact.Description</td>
+                            <td>
+                                <div role="group" class="w-60 btn-group">
+                                    <span style="margin-right: 5px;">
+                                        <a asp-controller="Contact" asp-action="Edit" asp-route-id="@contact.Id" class="btn btn-sm btn-primary"><i class="bi bi-pencil-square"></i>Edit</a>
+                                    </span>
+                                    <span>
+                                        <a asp-controller="Contact" asp-action="Delete" asp-route-id="@contact.Id" class="btn btn-sm btn-danger"><i class="bi bi-trash-fill"></i>Delete</a>
+                                    </span>
+                                </div>
+                            </td>
+                        </tr>
+                    }
+                }
+            </tbody>
+        </table>
+
+        <div class="col mb-3">
+            <a asp-controller="Contact" asp-action="Create" class="btn btn-lg btn-primary"><i class="bi bi-file-plus-fill"></i>Add Contact</a>
+        </div>
+    </div>
+</div>

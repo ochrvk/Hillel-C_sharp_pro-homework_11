@@ -1,9 +1,8 @@
-﻿using System;
-using Microsoft.EntityFrameworkCore.Migrations;
+﻿using Microsoft.EntityFrameworkCore.Migrations;
 
 #nullable disable
 
-namespace Hillel_C_sharp_pro_homework_11.Migrations
+namespace Hillel_C_sharp_pro_homework_11._1.Migrations
 {
     /// <inheritdoc />
     public partial class initial : Migration
@@ -18,13 +17,14 @@ namespace Hillel_C_sharp_pro_homework_11.Migrations
                     Id = table.Column<int>(type: "int", nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
                     Name = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    Text = table.Column<string>(type: "nvarchar(max)", nullable: true),
-                    CreatedAt = table.Column<DateTime>(type: "datetime2", nullable: true),
-                    Tags = table.Column<string>(type: "nvarchar(max)", nullable: true)
+                    Phone = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    AdditionalPhone = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    Email = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    Description = table.Column<string>(type: "nvarchar(max)", nullable: true)
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_Notes", x => x.Id);
+                    table.PrimaryKey("PK_Contacts", x => x.Id);
                 });
         }
 
@@ -32,7 +32,7 @@ namespace Hillel_C_sharp_pro_homework_11.Migrations
         protected override void Down(MigrationBuilder migrationBuilder)
         {
             migrationBuilder.DropTable(
-                name: "Notes");
+                name: "Contacts");
         }
     }
 }
