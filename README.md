@@ -13,7 +13,7 @@
 
 Використовуйте MVC-патерн у коді цієї програми.  
 
-![Notes]([[https://github.com/username/repository/raw/master/images/logo.png](https://drive.google.com/file/d/1LThu7RXWCflmsUdZwx7u5UDrO3aoi4cn/view?usp=sharing)](https://photos.app.goo.gl/QZpPojG8aKYJLYcf7))  
+![Notes](https://photos.app.goo.gl/5hdZ6MMgXDAgTonz9)  
 
 ## Додатково:
 
