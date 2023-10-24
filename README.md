@@ -9,10 +9,11 @@
 
 Реалізуйте необхідні методи і поля.  
 
-Реалізуйте виведення інформації на екран.  
+Реалізуйте виведення інформації на екран.   
 
+Використовуйте MVC-патерн у коді цієї програми.  
 
-Використовуйте MVC-патерн у коді цієї програми.
+![Notes]([https://github.com/username/repository/raw/master/images/logo.png](https://drive.google.com/file/d/1LThu7RXWCflmsUdZwx7u5UDrO3aoi4cn/view?usp=sharing))  
 
 ## Додатково:
 
@@ -28,3 +29,5 @@
 Реалізуйте виведення інформації на екран.  
 
 Використовуйте MVC-патерн у коді цієї програми.  
+
+![Contacts]([https://github.com/username/repository/raw/master/images/logo.png](https://drive.google.com/file/d/1FnYqVZZm2ObpGPteLl4YcuCx2Dp4LXrD/view?usp=sharing))    
