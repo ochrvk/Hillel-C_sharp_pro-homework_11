@@ -13,7 +13,8 @@
 
 Використовуйте MVC-патерн у коді цієї програми.  
 
-![image](https://github.com/ochrvk/Hillel-C_sharp_pro-homework_11/assets/55388034/97b7a469-924e-41a4-8052-43cc315490fb)
+![image](https://github.com/ochrvk/Hillel-C_sharp_pro-homework_11/assets/55388034/94d9b3d5-c35d-45e5-87ba-f98b6f83b715)
+
 
 
 ## Додатково:
