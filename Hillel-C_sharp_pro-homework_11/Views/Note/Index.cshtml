@@ -1,0 +1,33 @@
+﻿@model IEnumerable<Note>
+
+@{
+    ViewData["Title"] = "Notes list";
+}
+
+<div class="row">
+    @foreach (var note in Model)
+    {
+        <div class="col-md-4 mb-4">
+            <div class="card note-card">
+                <div class="card-body">
+                    <h5 class="card-title text-center">@note.Name</h5>
+                    <p class="card-text" style="font-size: 16px;">@note.Text</p>
+                    <hr class="bg-primary">
+                    <p class="card-text" style="font-size: 12px;"><small class="text-muted">Creation Date: @note.CreatedAt</small></p>
+                    <p class="card-text" style="font-size: 12px;">Tags: @note.Tags</p>
+                    <div class="btn-group" role="group" aria-label="Опції">
+                        <span style="margin-right: 5px;">
+                            <a asp-controller="Note" asp-action="Edit" asp-route-id="@note.Id" class="btn btn-outline-success"><i class="bi bi-pencil-square"></i>Edit</a>
+                        </span>
+                        <span>
+                            <a asp-controller="Note" asp-action="Delete" asp-route-id="@note.Id" class="btn btn-outline-danger"><i class="bi bi-trash-fill"></i>Delete</a>
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    }
+</div>
+<div class="d-flex justify-content-center">
+    <a asp-controller="Note" asp-action="Create" class="btn btn-outline-dark"><i class="bi bi-file-plus-fill"></i>Add Note</a>
+</div>
